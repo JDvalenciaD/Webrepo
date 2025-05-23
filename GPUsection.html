@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384q-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styleCPU.css">
+    <link rel="stylesheet" href="stylesfooterdef.css">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="./Carruselmarcas.css">
+    <link rel="icon" href="./imagenes/logosmall.png" type="image/x-icon">
+    <title>TarjetasGraficas/TechZone</title>
+</head>
+
+<body class="animated-bg">
+    <nav class="navbar custom-navbar fixed-top" id="navbar">
+        <di v class="container-fluid" data-bs-theme="light">
+            <img src="./imagenes/TechZoneLogo.png" alt="" style="width: 150px; height: 70px; padding: 0; margin: 0;">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" data-bs-theme="dark"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu de inicio</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Standdelrendimiento.html">Stand del rendimiento</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Componentes
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./CPUsection.html">Procesadores</a></li>
+                                <li><a class="dropdown-item" href="./RAMsection.html">Memorias RAM</a></li>
+                                <li><a class="dropdown-item" href="./GPUsection.html">Tarjetas graficas</a></li>
+                                <li><a class="dropdown-item" href="./StorageSection.html">Almacenamiento</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+            </div>
+    </nav>
+    <!--Carrusel de imagenes-->
+    <div>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner" style="height: 640px;">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="./imagenes/Tarjetagrafica1.jpg" class="d-block w-100 mt-5" alt="..."
+                        style="height: 600px; width: 500px;">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 style="color: white;">Tarjetas graficas</h5>
+
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="./imagenes/RTX4090caja.jpeg" class="d-block w-100 mt-15" alt="..."
+                        style=" height: 660px; width: 690px;">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 style="color: white;">Nuevas en caja</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./imagenes/radeon2.jpeg" class="d-block m-15" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 style="color: white ; " class="mt-5">O tambien tenemos otras opciones</h5>
+                    </div>
+                </div>
+                >
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!--Que son las tarjetas graficas?-->
+    <div class="container">
+
+        <div class="container mt-5">
+            <h4 class="text-center" style="color:white;">Que es una GPU</h4>
+            <p class="text-align: justify; mb-4" style="color: white;">La GPU(Graphics processing Unit o unidad central
+                de
+                procesamiento grafico) se encarga de dibujar los graficos 3D(Su principal uso)en la computadora en
+                equipo
+                con la CPU y la RAM. Escoger una buena tarjeta grafica es crucial para tener una buena taza de
+                FPS(Frames
+                Per Second o fotogramas por segundo)y tambien una buena resolucion, siendo lo ideal 1080P en adelante
+                para
+                una buena experiencia</p>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div class="card justify-content-center">
+                        <iframe width="480" height="600"
+                            src="https://www.youtube.com/embed/8_ZTvG1WQxM?si=aomhG_PQaT3Pi67L"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+                            style="border-radius: 40px; padding-left: 20px;"></iframe>
+
+                        <div class="card-body">
+                            <h5 class="card-title text-center mt-3"></h5>
+                            <p class="card-text mt-3">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <p style="color: white; text-align: justify;">
+                    <p>
+                    <p style="color: white; text-align: justify;">En este video muestran una comparacion CPU vs GPU, en
+                        la
+                        cual retratan a traves de estas 2 maquinas de pintura la manera en la que la CPU y GPU dibujan
+                        los
+                        graficos. Como puedes apreciar la CPU dibuja cara sonriente de manera gradual y lenta, mientras
+                        que,
+                        La GPU pintaba a la monalisa en cuestion de segundos. </p>
+                    <p style="color: white; text-align: justify;">Esto se debe a que la CPU funciona de una manera en la
+                        que
+                        hace muchos calculos de manera individual y secuencial, es decir, termina con una operacion y
+                        solo
+                        en ese momento empieza con la otra. </p>
+                    <p style="color: white; text-align: justify;">Mientras que la GPU esta hecha para realizar calculos
+                        en
+                        paralelo, es decir, es capaz de hacer millones de operaciones en simultaneo. </p>
+                    <p style="color: white; text-align: justify;">Fisicamente La CPU y la GPU son diferentes, una Cpu
+                        puede
+                        tener 4, 6, 8 nucleos. Mientras que una GPU puede tener miles de nucleos pequeños(CUDA cores),
+                        tambien TMU(Texture Mapping Unit o unidad de mapeo de textura) o RT nucleos, Pero eso ya lo dejo
+                        a
+                        la curiosidad del cliente. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="container" style="text-align: justify;">
+            <h3 class="text-center mt-5 mb-4" style="color: white;">Tarjetas graficas Nvidia</h3>
+            <div class="carousel-container">
+                <div class="carousel-track mt-4 mb-4">
+                    <!-- Carrusel de marcas -->
+                    <div class="brand"><img src="./imagenes/ROGLogoNofondo.png" alt=""
+                            style="width: 200px; height: 120px;" class="">
+                    </div>
+                    <div class="brand"><img src="./imagenes/AoruslogoNofondo.png" alt=""
+                            style="width: 200px; height: 60px;" class="mt-4">
+                    </div>
+                    <div class="brand"><img src="./imagenes/MSIlogonofondo.png" alt=""
+                            style="width: 210px; height: 100px;" class="mt-2">
+                    </div>
+                    <div class="brand"><img src="./imagenes/NvidiaLogoNofondo.png" alt=""
+                            style="width: 180px; height: 100px;">
+                    </div>
+                    <div class="brand"><img src="./imagenes/EvgalogoNofondo.png" alt=""
+                            style="width: 160px; height: 80px;" class="mt-3">
+                    </div>
+                    <div class="brand"><img src="./imagenes/ZotaclogoNofondo.png" alt=""
+                            style="width: 180px; height: 60px;" class="mt-4">
+                    </div>
+                    <!-- Duplicamos los elementos para hacer loop infinito visual -->
+                    <div class="brand"><img src="./imagenes/ROGLogoNofondo.png" alt=""
+                            style="width: 200px; height: 120px;" class=""></div>
+                    <div class="brand"><img src="./imagenes/AoruslogoNofondo.png" alt=""
+                            style="width: 200px; height: 60px;" class="mt-4"></div>
+                    <div class="brand"><img src="./imagenes/MSIlogonofondo.png" alt=""
+                            style="width: 210px; height: 100px;" class="mt-2"></div>
+                    <div class="brand"><img src="./imagenes/EvgalogoNofondo.png" alt=""
+                            style="width: 160px; height: 80px;" class="mt-3"></div>
+                    <div class="brand"><img src="./imagenes/ZotaclogoNofondo.png" alt=""
+                            style="width: 180px; height: 60px;" class="mt-4">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="cardcpu h-100 ">
+                    <img src="./imagenes/RTX5090nofondo.png" class="card-img-top mt-5 " alt="..."
+                        style="border-radius: 20px; height: 245px; ">
+                    <div class="card-body">
+                        <h5 class="card-title text-center  mb-2">RTX 5090 Aorus</h5>
+                        <p class="card-text text-center">32GB Vram<br>600W de consumo<br>DDR4
+                            <hr>
+                        </p>
+                        <p class="text-center" style="text-align: justify;">
+                            Un autentico mounstro entre las tarjetas graficas, el tope de gama que Nvidia tiene
+                            actualmente, Ideal para jugar en 4K
+                            <hr>
+                        </p>
+                        <a href="" class="text-center">
+                            <p>Mira su funcionamiento en el Stand Del rendimiento</p>
+                        </a>
+                        <p class="text-center">Precio: 3.558$</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="cardcpu h-100">
+                    <section id="seccion-rtx4090"> ... contenido RTX 4090 ... </section>
+                    <img src="./imagenes/RTX4090nofondo.png" class="card-img-top mt-5" alt="..."
+                        style="border-radius: 20px; height: 240px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-center">RTX 4090 ROG Z</h5>
+                        <p class="card-text text-center">24GB Vram<br>450W de consumo<br>DDR4
+                            <hr>
+                        </p>
+                        <p class="text-center" style="text-align: justify;">Es la gama alta de la generacion pasada de
+                            graficas, Tiene un rendimiento bastante similar a el de su hermana mayor, ideal para el
+                            4K<span class="placeholder col-3 placeholder-lg bg-primary"></span>
+
+                            <hr>
+                        </p>
+                        <a href="" class="text-center">
+                            <p>Mira su funcionamiento en el Stand Del rendimiento</p>
+                        </a>
+                        <p class="text-center ">Precio: 3.000$</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="cardcpu h-100">
+                    <img src="./imagenes/RTX3080Nofondo.png" class="card-img-top" alt="..."
+                        style="border-radius: 20px;  height: 280px;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center  mb-2">RTX 3080 EVGA</h5>
+                        <p class="card-text text-center tex">10GB Vram<br>400W de consumo<br>DDR4
+                            <hr>
+                        </p>
+                        <p class="text-center">La generacion que hizo el RayTracing(Trazado de rayos realistas)una
+                            realidad, una grafica bonita, ideal para jugar en 2k.
+                            <hr>
+                        </p>
+                        <a href="" class="text-center">
+                            <p>Mira su funcionamiento en el Stand Del rendimiento</p>
+                        </a>
+                        <p class="text-center">Precio: 900$</p>
+                    </div>
+                </div>
+            </div>
+            <!--fin de las 3 cartas-->
+        </div>
+    </div>
+    </div>
+
+    <!--Card graficas 2 -->
+    <div class="container mt-5">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="cardcpu h-100 ">
+                    <img src="./imagenes/RTX2080Nofondo.png" class="card-img-top " alt="..."
+                        style="border-radius: 20px; height: 240px; ">
+                    <div class="card-body">
+                        <h5 class="card-title text-center  mb-2">Nvidia RTX 2080</h5>
+                        <p class="card-text text-center">8GB Vram<br>215W de consumo<br>DDR4
+                            <hr>
+                        </p>
+                        <p class="text-center" style="text-align: justify;">
+                            La primera generacion de tarjetas graficas RTX, esta ofrece un rendimiento para gaming mas
+                            que descente, ideal para FULL HD.
+                            <hr>
+                        </p>
+                        <a href="" class="text-center">
+                            <p>Mira su funcionamiento en el Stand Del rendimiento</p>
+                        </a>
+                        <p class="text-center">Precio: 147.2$</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="cardcpu h-100">
+                    <img src="./imagenes/Gtx1080nofondo.png" class="card-img-top " alt="..."
+                        style="border-radius: 20px; height: 240px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-center  ">GTX 1080 ROG Z</h5>
+                        <p class="card-text text-center">8GB Vram<br>180W de consumo<br>DDR4
+                            <hr>
+                        </p>
+                        <p class="text-center" style="text-align: justify;">
+                            La primera generacion de tarjetas graficas RTX, esta ofrece un rendimiento para gaming mas
+                            que descente, ideal para FULL HD.
+
+
+                            <hr>
+                        </p>
+                        <a href="" class="text-center">
+                            <p>Mira su funcionamiento en el Stand Del rendimiento</p>
+                        </a>
+                        <p class="text-center">Precio: 110.0$</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="cardcpu h-100">
+                    <img src="./imagenes/GTX960Nofondo.png" class="card-img-top" alt="..."
+                        style="border-radius: 20px; width: 300px; height: 240px;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center  mb-2">GTX 960 EVGA</h5>
+                        <p class="card-text text-center tex">2GB Vram<br>120W de consumo<br>DDR4
+                            <hr>
+                        </p>
+                        <p class="text-center">Ideal para gaming casual, Puedes jugar juegos modernos en una calidad
+                            grafica y taza de fotogramas bastante aceptable a resoluciones HD
+                            <hr>
+                        </p>
+                        <a href="" class="text-center">
+                            <p>Mira su funcionamiento en el Stand Del rendimiento</p>
+                        </a>
+                        <p class="text-center">Precio: 81.77$</p>
+                    </div>
+                </div>
+            </div>
+            <!--fin de las 3 cartas-->
+        </div>
+
+
+    </div>
+    </div>
+
+    <h3 class="text-center mt-5" style="color: white;">Tarjetas graficas AMD</h3>
+    <div class="container mt-5">
+        <div class="carousel-container">
+            <div class="carousel-track mt-4 mb-4">
+                <!-- Carrusel de marcas -->
+                <div class="brand"><img src="./imagenes/ROGLogoNofondo.png" alt="" style="width: 200px; height: 120px;"
+                        class="">
+                </div>
+                <div class="brand"><img src="./imagenes/AoruslogoNofondo.png" alt="" style="width: 200px; height: 60px;"
+                        class="mt-4">
+                </div>
+                <div class="brand"><img src="./imagenes/MSIlogonofondo.png" alt="" style="width: 210px; height: 100px;"
+                        class="mt-2">
+                </div>
+                <div class="brand"><img src="./imagenes/NvidiaLogoNofondo.png" alt=""
+                        style="width: 180px; height: 100px;">
+                </div>
+                <div class="brand"><img src="./imagenes/EvgalogoNofondo.png" alt="" style="width: 160px; height: 80px;"
+                        class="mt-3">
+                </div>
+                <div class="brand"><img src="./imagenes/ZotaclogoNofondo.png" alt="" style="width: 180px; height: 60px;"
+                        class="mt-4">
+                </div>
+                <!-- Duplicamos los elementos para hacer loop infinito visual -->
+                <div class="brand"><img src="./imagenes/ROGLogoNofondo.png" alt="" style="width: 200px; height: 120px;"
+                        class=""></div>
+                <div class="brand"><img src="./imagenes/AoruslogoNofondo.png" alt="" style="width: 200px; height: 60px;"
+                        class="mt-4"></div>
+                <div class="brand"><img src="./imagenes/MSIlogonofondo.png" alt="" style="width: 210px; height: 100px;"
+                        class="mt-2"></div>
+                <div class="brand"><img src="./imagenes/EvgalogoNofondo.png" alt="" style="width: 160px; height: 80px;"
+                        class="mt-3"></div>
+                <div class="brand"><img src="./imagenes/ZotaclogoNofondo.png" alt="" style="width: 180px; height: 60px;"
+                        class="mt-4">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="cardcpu h-100 ">
+                    <img src="./imagenes/RadeonRX7900Nofondo.png" class="card-img-top mt-5 " alt="..."
+                        style="border-radius: 20px; height: 245px; ">
+                    <div class="card-body">
+                        <h5 class="card-title text-center  mb-2">AMD Radeon RX7900</h5>
+                        <p class="card-text text-center">16GB Vram<br>260W de consumo<br>DDR4
+                            <hr>
+                        </p>
+                        <p class="text-center" style="text-align: justify;">
+                            Es la gama alta de Radeon, esta grafica posee un rendimiento bestial, capaz de plantarle
+                            cara a la gama alta de Nvidia, capaz de correr 4k sin problemas
+                            <hr>
+                        </p>
+                        <a href="" class="text-center">
+                            <p>Mira su funcionamiento en el Stand Del rendimiento</p>
+                        </a>
+                        <p class="text-center">Precio: 990$</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="cardcpu h-100">
+                    <img src="./imagenes/Radeon_6700xtNofondo.png" class="card-img-top mt-5" alt="..."
+                        style="border-radius: 20px; height: 240px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-center">AMD Radeon 6700xt</h5>
+                        <p class="card-text text-center">12GB Vram<br>230W de consumo<br>DDR4
+                            <hr>
+                        </p>
+                        <p class="text-center" style="text-align: justify;">Su chip tiene un rendimiento muy similar a
+                            el de su hermana mayor, solo que esta posee solo la mitad de Vram de esta, Puede con 2k en
+                            con algunos juegos
+                            4K<span class="placeholder col-3 placeholder-lg bg-primary"></span>
+
+                            <hr>
+                        </p>
+                        <a href="" class="text-center">
+                            <p>Mira su funcionamiento en el Stand Del rendimiento</p>
+                        </a>
+                        <p class="text-center ">Precio: 900$</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="cardcpu h-100">
+                    <img src="./imagenes/Radeon_RX_5700Nofondo.png" class="card-img-top" alt="..."
+                        style="border-radius: 20px;  height: 280px;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center  mb-2">AMD Radeon 5700</h5>
+                        <p class="card-text text-center tex">8GB Vram<br>180W de consumo<br>DDR4
+                            <hr>
+                        </p>
+                        <p class="text-center">La gama media - alta de AMD, este es el punto intermedio si no quieres
+                            gastar una fortuna pero aun asi quieres rendimiento excepcional, corre juegos en FULL HD
+                            <hr>
+                        </p>
+                        <a href="" class="text-center">
+                            <p>Mira su funcionamiento en el Stand Del rendimiento</p>
+                        </a>
+                        <p class="text-center">Precio: 729$</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--fin de las 3 cartas-->
+    </div>
+    </div>
+    </div>
+
+    <!--Card graficas 2 -->
+    <div class="container mt-5">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="cardcpu h-100 ">
+                    <img src="./imagenes/RX_4700Nofondo.png" class="card-img-top " alt="..."
+                        style="border-radius: 20px; height: 240px; ">
+                    <div class="card-body">
+                        <h5 class="card-title text-center  mb-2">AMD Radeon RX4700</h5>
+                        <p class="card-text text-center">8GB Vram<br>150W de consumo<br>DDR4
+                            <hr>
+                        </p>
+                        <p class="text-center" style="text-align: justify;">
+                            Se encuentra en la gama media de AMD, corre gran parte de los juegos actuales en calidad
+                            grafica Media en FULL HD
+                            <hr>
+                        </p>
+                        <a href="" class="text-center">
+                            <p>Mira su funcionamiento en el Stand Del rendimiento</p>
+                        </a>
+                        <p class="text-center">Precio: 147.2$</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="cardcpu h-100">
+                    <img src="./imagenes/RX580MsiFondo.png" class="card-img-top " alt="..."
+                        style="border-radius: 20px; height: 240px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-center  ">AMD RAadeon 580</h5>
+                        <p class="card-text text-center">8GB Vram<br>185W de consumo<br>DDR4
+                            <hr>
+                        </p>
+                        <p class="text-center" style="text-align: justify;">
+                            Ideal para computadora gaming de entrada, esta tarjeta grafica es capaz de mover juegos en
+                            calidad media, cantidad descente de FPS y HD
+                            <hr>
+                        </p>
+                        <a href="" class="text-center">
+                            <p>Mira su funcionamiento en el Stand Del rendimiento</p>
+                        </a>
+                        <p class="text-center">Precio: 110.0$</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="cardcpu h-100">
+                    <img src="./imagenes/RX_480Nofondo.png" class="card-img-top" alt="..."
+                        style="border-radius: 20px; width: 300px; height: 240px;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center  mb-2">GTX 960 EVGA</h5>
+                        <p class="card-text text-center tex">2GB Vram<br>120W de consumo<br>DDR4
+                            <hr>
+                        </p>
+                        <p class="text-center">Ideal para gaming casual, Puedes jugar juegos modernos en una calidad
+                            grafica y taza de fotogramas bastante aceptable a resoluciones HD
+                            <hr>
+                        </p>
+                        <a href="" class="text-center">
+                            <p>Mira su funcionamiento en el Stand Del rendimiento</p>
+                        </a>
+                        <p class="text-center">Precio: 81.77$</p>
+                    </div>
+                </div>
+            </div>
+            <!--fin de las 3 cartas-->
+        </div>
+    </div>
+    </div>
+
+
+    <footer class="footer mt-5">
+        <div class="footer-section">
+            <h3>Ayuda</h3>
+            <ul>
+                <li><a href="#">Preguntas frecuentes</a></li>
+                <li><a href="#">Guía de usuario</a></li>
+                <li><a href="#">Soporte técnico</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section text'">
+            <h3>Contactos</h3>
+            <p>Email: bluejuanr95@gmail.com</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="40" fill="currentColor"
+                        class="bi bi-facebook" viewBox="0 0 16 16">
+                        <path
+                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                    </svg></a>
+                <a href="#"><i class="fab fa-instagram"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="40"
+                            fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                        </svg></i></a>
+                <a href="#"><i class="fab fa-linkedin""></i>
+        <svg xmlns=" http://www.w3.org/2000/svg" width="50" height="60" fill="currentColor" class="bi bi-linkedin"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                        </svg></a>
+            </div>
+        </div>
+
+        <div class=" footer-section">
+            <h3>Sugerencias</h3>
+            <p>¿Tienes alguna idea para mejorar nuestra web? ¡Nos encantaría
+                saberla!</p>
+            <a href="#">Enviar sugerencia</a>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="./scriptNavBar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
