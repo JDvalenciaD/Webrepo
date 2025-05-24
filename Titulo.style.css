@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@800&display=swap');
+
+.galaxy-title {
+  margin-top: 270px;
+  margin-bottom: 150px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 100px;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(90deg, #00faff, #7c00ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 10px rgba(124, 0, 255, 0.8), 0 0 20px rgba(0, 250, 255, 0.6);
+
+}
