@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stand del rendimiento</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384q-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+        <link rel="stylesheet" href="./Style.css">
+    <link rel="stylesheet" href="./styleCPU.css">
+    <link rel="stylesheet" href="./stylesfooterdef.css">
+    <link rel="icon" href="./imagenes/logosmall.png" type="image/x-icon">
+    <link rel="stylesheet" href="./Titulo.style.css">
+</head>
+
+<body class="animated-bgcpu">
+    <nav class="navbar custom-navbar fixed-top " id="navbar">
+        <di v class="container-fluid" data-bs-theme="light">
+            <a href="./index.html">
+                <img src="./imagenes/TechZoneLogo.png" alt="" style="width: 150px; height: 70px; padding: 0; margin: 0;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" data-bs-theme="dark"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu de inicio</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html" style="color: white;">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./Standdelrendimiento.html" style="color: white;">Stand Del rendimiento</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" style="color: white;">
+                                Componentes
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./CPUsection.html">Procesadores</a></li>
+                                <li><a class="dropdown-item" href="./RAMsection.html">Memorias RAM</a></li>
+                                <li><a class="dropdown-item" href="./GPUsection.html">Tarjetas graficas</a></li>
+                                <li><a class="dropdown-item" href="./StorageSection.html">Almacenamiento</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+            </div>
+    </nav>
+
+    <h1 class="galaxy-title galaxy-rgb-text levitating-logo  logo-levitating">Stand Del Rendimiento</h1>
+
+    <!--Carrosel de imagenes-->
+   
+    <div class="container">
+        <h1 class="text-center mb-4" style="color: white; padding-top: 115px;">¿Que es el Stand del rendimiento?</h1>
+        <p class="text-align: justify" style="color: white;">El Stand del rendmiento es una seccion en TechZone la cual esta dedicada a mostrar el rendimiento 
+            y capacidades de los componentes(En especial de la GPU)en escenarios de exigencia. por eso procuramos ejemplificar el rendimiento de los componentes de manera practica a traves de escenarios reales y practicos donde aquellas personas del comun como tu yo ya poseen los componentes que deseas comprar.
+        </p>
+
+    </div>
+
+    <div class="container">
+        <
+        <h2 class="mb-4 text-center mt-5" style="color: white;">🎮 Calculadora de FPS</h2>
+        <p class="text-center" style="color: white;">La calculadora de FPS calcula la cantidad de FPS aproximada que daria ciertas configuraciones de componentes en escenarios de uso reales.</p>
+        <form id="fpsForm">
+            <div class="mb-3">
+                <label for="cpu" class="form-label">CPU</label>
+                <select class="form-select" id="cpu" required>
+                    <option value="none">---Selecciona una CPU---</option>
+                    <option value="3990X">Ryzen Threadripper 3990X</option>
+                    <option value="9950X">Ryzen 9 9950X</option>
+                    <option value="7700X">Ryzen 7 7700X</option>
+                    <option value="5600X">Ryzen 5 5600X</option>
+                    <option value="3000G">AMD Athlon 3000G</option>
+                    <option value="A46400">AMD A4 6400</option>
+                    <option value="12900K">Intel Core i9-12900K</option>
+                    <option value="13400F">Intel Core i5-13400F</option>
+                    <option value="14100F">Intel Core i3-14100F</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="gpu" class="form-label">GPU</label>
+                <select class="form-select" id="gpu" required>
+                    <option value="none">---Selecciona una GPU---</option>
+                    <option value="5090">NVIDIA RTX 5090</option>
+                    <option value="4090">NVIDIA RTX 4090</option>
+                    <option value="3080">NVIDIA RTX 3080</option>
+                    <option value="2080">NVIDIA RTX 2080</option>
+                    <option value="1080">NVIDIA GTX 1080</option>
+                    <option value="960">NVIDIA GTX 960</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label for="ram" class="form-label">RAM</label>
+                <select class="form-select" id="ram" required>
+                    <option value="none">---Selecciona una cantidad de RAM---</option>
+                    <option value="8">8 GB</option>
+                    <option value="16">16 GB</option>
+                    <option value="32">32 GB</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">Calcular FPS</button>
+        </form>
+
+        <div id="result" style="display:none;"></div>
+    </div>
+
+
+
+
+
+    <div class="container mt-5 mb-3 text-center">
+        <img src="./imagenes/NvidiaLogoNofondo.png" alt="">
+        <p class="text-center mb-4" style="color: white;" >Esta grafica te muestra de forma rapida y resumida la cantidad de FPS que cada GPU da en cada juego, y las compara.</p>
+        <h2 class="text-center mb-2" style="color: white;">Revisa los FPS queda las GPU de NVIDIA!</h2>
+        <label for="gpuSelect" style="color: white;">Selecciona una tarjeta gráfica:</label>
+        <select id="gpuSelect">
+            <option value="none" class="text-center">--Selecciona una GPU--</option>
+
+            <option value="3060">NVIDIA RTX 3060</option>
+            <option value="3070">NVIDIA RTX 3070</option>
+            <option value="3080">NVIDIA RTX 3080</option>
+            <option value="4060">NVIDIA RTX 4060</option>
+        </select>
+
+        <canvas id="fpsChart" width="400" height="170"></canvas>
+
+    </div>
+  
+    <div class="container text-center">
+
+        <div class="amd-section">
+            <img src="./imagenes/LogoAMDnoufondou.png" alt="">
+            <p class="text-center mb-3 mb-3" style="color: white;" >Esta grafica te muestra de forma rapida y resumida la cantidad de FPS que cada GPU da en cada juego, y las compara.</p>
+            <h2 style="color: white;">Calculadora de FPS por GPU AMD</h2>
+            <label for="amdGpuSelect" style="color: white;">Selecciona una tarjeta gráfica AMD:</label>
+            <select id="amdGpuSelect">
+                <option value="none">--Selecciona una GPU AMD</option>
+                <option value="7900">AMD RX 7900 XTX</option>
+                <option value="6700">AMD RX 6700 XT</option>
+                <option value="5700">AMD RX 5700</option>
+                <option value="580">AMD RX 580</option>
+                <option value="480">AMD RX 480</option>
+            </select>
+
+            <canvas id="amdFpsChart" width="400" height="170"></canvas>
+        </div>
+    </div>
+<div class="container text-align:justify text-center" style="color: white;">
+    <h1 class="mt-5 mb-4">Miralos en accion!</h1>
+    <p class="mb-4">Si aun asi deseas ver con un poco mas de profundidad y detalle del rendimiento de las tarjetas graficas, te invitamos a revisar nuestras tarjetas que hicimos para ti, cada una cuenta con cuatro opciones que te mandaran a un video que demuestra su rendimiento en diferentes escenarios y sus configuraciones(Se refiere a la combinacion de componentes que escoges)Presta atencion a las resoluciones y los programas que usan para probar el rendimiento.</p>
+
+</div>
+
+
+    <div class="container">
+        <!--comienzo cartas AMD Fila 1-->
+        <div class="container">
+
+
+            <div class="container">
+
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="cardcpu h-100 ">
+                            <img src="./imagenes/amdthreaddripper.png" class="card-img-top " alt="..."
+                                style="border-radius: 20px; ">
+                            <div class="card-body">
+                                <h5 class="card-title text-center  mb-2">AMD Ryzen Threadripper</h5>
+                                <p class="card-text text-center">
+                                    <hr>
+                                </p>
+                                <p class="text-center"> <a href="">
+                                        <p class="text-center"><a
+                                                href="https://www.youtube.com/watch?v=z6GzcRY1DIg" target="_blank">opcion
+                                                1</a>
+                                            <hr>
+                                            <a href="https://www.youtube.com/watch?v=zS6Cv6iJDbM" target="_blank">
+                                                <p class="text-center">Opcion 2</p>
+                                            </a>
+                                            <hr>
+                                            <a href="https://www.youtube.com/watch?v=CyAObFNzsb" target="_blank">
+                                                <p class="text-center">Opcion 3</p>
+                                            </a>
+                                            <hr>
+                                            <a href="https://www.youtube.com/watch?v=pu02qltrmnc" target="_blank">
+                                                <p class="text-center">Opcion 4</p>
+                                            </a>
+                                            <hr>
+
+                                        </p>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="cardcpu h-100">
+                            <img src="./imagenes/amd9950x.png" class="card-img-top" alt="..."
+                                style="border-radius: 20px; height: 320px;">
+                            <div class="card-body text-center">
+                                <h5 class="card-title text-center  ">AMD Ryzen 9950X</h5>
+                                <p class="card-text text-center">
+                                    <hr>
+                                </p>
+                                <p class="text-center">
+
+                                    <a href="https://www.youtube.com/watch?v=wLfacPj5aGk" target="_blank">
+                                        <p class="text-center">Opcion 1</p>
+                                    </a>
+                                    <hr>
+                                    <a href="https://www.youtube.com/watch?v=AHEYiye7puA&t=25s" target="_blank">
+                                        <p class="text-center">Opcion 2</p>
+                                    </a>
+                                    <hr>
+                                    <a href="https://www.youtube.com/watch?v=vrO38OgJxTc" target="_blank">
+                                        <p class="text-center">Opcion 3</p>
+                                    </a>
+                                    <hr>
+                                    <a href="https://www.youtube.com/watch?v=L5TTdiTaoiA" target="_blank">
+                                        <p class="text-center">Opcion 4</p>
+                                    </a>
+                                    <hr>
+
+
+                                </p>
+
+                                </p>
+
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="cardcpu h-100">
+                            <img src="./imagenes/amd7- 7700x.png" class="card-img-top" alt="..."
+                                style="border-radius: 20px;  height: 320px;">
+                            <div class="card-body">
+                                <h5 class="card-title text-center  mb-2">AMD Ryzen 7700X</h5>
+                                <p class="card-text text-center tex">
+                                    <hr>
+                                </p>
+                                <p class="text-center">
+                                <p class="text-center">
+
+                                    <a href="https://www.youtube.com/watch?v=uH6qE14emzU" target="_blank">
+                                        <p class="text-center">Opcion 1</p>
+                                    </a>
+                                    <hr>
+                                    <a href="https://www.youtube.com/watch?v=uH6qE14emzU" target="_blank">
+                                        <p class="text-center">Opcion 2</p>
+                                    </a>
+                                    <hr>
+                                    <a href="https://www.youtube.com/watch?v=XMQvrimNoZQ" target="_blank">
+                                        <p class="text-center">Opcion 3</p>
+                                    </a>
+                                    <hr>
+                                    <a href="https://www.youtube.com/watch?v=ApScXZTEXz0" target="_blank">
+                                        <p class="text-center">Opcion 4</p>
+                                    </a>
+
+
+
+                                </p>
+
+                                </p>
+                                <a href="" class="text-center">
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--fin de las 3 cartas-->
+                </div>
+            </div>
+
+
+
+
+
+
+            <!--Cartas AMD 2-->
+            <div class="container mt-4">
+
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="cardcpu h-100">
+                            <img src="./imagenes/amd5-5600x.png" class="card-img-top" alt="..."
+                                style="border-radius: 20px;">
+                            <div class="card-body">
+                                <h5 class="card-title text-center mt-3 mb-2">Ryzen 5 5600X</h5>
+                                <p class="card-text text-center">
+
+                                </p>
+                                <p class="text-center"><br>
+                                    <hr>
+                                </p>
+                                <a href="" class="text-center">
+                                    <a href="https://www.youtube.com/watch?v=CYIX1WqLqSg" target="_blank">
+                                        <p class="text-center">Opcion 1</p>
+                                    </a>
+                                    <hr>
+                                    <a href="https://www.youtube.com/watch?v=pBaYfEuVr-M" target="_blank">
+                                        <p class="text-center">Opcion 2</p>
+                                    </a>
+                                    <hr>
+                                    <a href="https://www.youtube.com/watch?v=UFkvztFhfTU" target="_blank">
+                                        <p class="text-center">Opcion 3</p>
+                                    </a>
+                                    <hr>
+                                    <a href="https://www.youtube.com/watch?v=NLhWsZtq1Qc" target="_blank">
+                                        <p class="text-center">Opcion 4</p>
+                                    </a>
+                                    <hr>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="cardcpu h-100">
+                            <img src="./imagenes/amdathlon.png" class="card-img-top" alt="..."
+                                style="border-radius: 20px;">
+                            <div class="card-body text-center">
+                                <h5 class="card-title text-center  mb-4">AMD athlon</h5>
+                                <p class="card-text text-center">
+                                    <hr>
+                                </p>
+                                <p class="text-center">
+                                    <a href="https://www.youtube.com/watch?v=5_fYwXFWwzQ" target="_blank">
+                                        <p class="text-center">Opcion 1</p>
+                                    </a>
+                                    <hr>
+                                    <a href="https://www.youtube.com/watch?v=udhNNDT6uoo" target="_blank">
+                                        <p class="text-center">Opcion 2</p>
+                                    </a>
+                                    <hr>
+                                    <a href="https://www.youtube.com/watch?v=udhNNDT6uoo" target="_blank">
+                                        <p class="text-center">Opcion 3</p>
+                                    </a>
+                                    <hr>
+                                    <a href="https://www.youtube.com/watch?v=bkOCSP4er44" target="_blank">
+                                        <p class="text-center">Opcion 4</p>
+                                    </a>
+                                    <hr>
+                                </p>
+                                <a href="" class="text-center">
+
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="cardcpu h-100">
+                            <img src="./imagenes/amda1.png" class="card-img-top" alt="..." style="border-radius: 20px;">
+                            <div class="card-body">
+                                <h5 class="card-title text-center  ">AMD A4 </h5>
+                                <p class="card-text text-center tex">
+                                    <hr>
+                                </p>
+                                <p class="text-center">
+                                    <a href="https://www.youtube.com/watch?v=5_fYwXFWwzQ" target="_blank">
+                                        <p class="text-center">Opcion 1</p>
+                                    </a>
+                                    <hr>
+                                    <a href="https://www.youtube.com/watch?v=udhNNDT6uoo" target="_blank">
+                                        <p class="text-center">Opcion 2</p>
+                                    </a>
+                                    <hr>
+                                    <a href="https://www.youtube.com/watch?v=udhNNDT6uoo" target="_blank">
+                                        <p class="text-center">Opcion 3</p>
+                                    </a>
+                                    <hr>
+                                    <a href="https://www.youtube.com/watch?v=bkOCSP4er44" target="_blank">
+                                        <p class="text-center">Opcion 4</p>
+                                    </a>
+                                    <hr>
+                                </p>
+
+                                </p>
+                                <a href="" class="text-center">
+
+                                </a>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--fin de las 3 cartas-->
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="container">
+
+                <h3 class="mt-5 mb-5 text-center" style="color:white;">INTEL</h3>
+
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="cardcpu h-100">
+                        <img src="./imagenes/core_i9_12900k-removebg-preview.png" class="card-img-top" alt="..."
+                            style="border-radius: 20px;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Core I9 12900K</h5>
+                            <p class="card-text text-center">
+                                <hr>
+                            </p>
+                            <p class="text-center">
+                                <a href="https://www.youtube.com/watch?v=EDPVml6FUMg" target="_blank">
+                                    <p class="text-center">Opcion 1</p>
+                                </a>
+                                <hr>
+                                <a href="https://www.youtube.com/watch?v=233cqr-14lU" target="_blank">
+                                    <p class="text-center">Opcion 2</p>
+                                </a>
+                                <hr>
+                                <a href="https://www.youtube.com/watch?v=cZeXXEaSTWE" target="_blank">
+                                    <p class="text-center">Opcion 3</p>
+                                </a>
+                                <hr>
+                                <a href="https://www.youtube.com/watch?v=x4CdAg3lqGE" target="_blank">
+                                    <p class="text-center">Opcion 4</p>
+                                </a>
+                                <hr>
+
+                            </p>
+                            <a href="" class="text-center">
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="cardcpu h-100">
+                        <img src="./imagenes/core_i7_14100F-removebg-preview.png" class="card-img-top" alt="..."
+                            style="border-radius: 20px; height: 295px;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-center">Core i7 14100F</h5>
+
+                            <hr>
+                            </p>
+                            <p class="text-center">
+                                <a href="https://www.youtube.com/watch?v=Dd9qCbXHik8" target="_blank">
+                                    <p class="text-center">Opcion 1</p>
+                                </a>
+                                <hr>
+                                <a href="https://www.youtube.com/watch?v=Dd9qCbXHik8" target="_blank">
+                                    <p class="text-center">Opcion 2</p>
+                                </a>
+                                <hr>
+                                <a href="https://www.youtube.com/watch?v=ejlFVkkmpd0" target="_blank">
+                                    <p class="text-center">Opcion 3</p>
+                                </a>
+                                <hr>
+                                <a href="https://www.youtube.com/watch?v=ejlFVkkmpd0" target="_blank">
+                                    <p class="text-center">Opcion 4</p>
+                                </a>
+                                <hr>
+
+
+                            </p>
+                            <a href="" class="text-center">
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="cardcpu h-100">
+                        <img src="./imagenes/corei5_13400F-removebg-preview.png" class="card-img-top" alt="..."
+                            style="border-radius: 20px;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Core i5 13400F</h5>
+                            <p class="card-text text-center ">
+                                <hr>
+                            </p>
+                            <p class="text-center">
+                                <a href="https://www.youtube.com/watch?v=htl2k7ytVNM" target="_blank">
+                                    <p class="text-center">Opcion 1</p>
+                                </a>
+                                <hr>
+                                <a href="https://www.youtube.com/watch?v=RSKM2WwTi6c" target="_blank">
+                                    <p class="text-center">Opcion 2</p>
+                                </a>
+                                <hr>
+                                <a href="https://www.youtube.com/watch?v=YS-VXj4lVDU" target="_blank">
+                                    <p class="text-center">Opcion 3</p>
+                                </a>
+                                <hr>
+                                <a href="https://www.youtube.com/watch?v=UvTqfhGHG6A" target="_blank">
+                                    <p class="text-center">Opcion 4</p>
+                                </a>
+                                <hr>
+
+                            </p>
+                            <a href="" class="text-center">
+
+                            </a>
+                            <a href="">
+                                <p></p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--fin de las 3 cartas-->
+            </div>
+
+        </div>
+        <div class="container mt-5">
+
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="cardcpu h-100">
+                        <img src="./imagenes/Core_i5_21400F-removebg-preview.png" class="card-img-top" alt="..."
+                            style="border-radius: 20px;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center mt-5 ">Core i5 21400f</h5>
+                            <p class="text-center">
+                            </p>
+                            <p class="card-text text-center">
+                                <a href="https://www.youtube.com/watch?v=lGEzdsf36_Q" target="_blank">
+                                    <p class="text-center">Opcion 1</p>
+                                </a>
+                                <hr>
+                                <a href="https://www.youtube.com/watch?v=NCUg9uXRE1s" target="_blank">
+                                    <p class="text-center">Opcion 2</p>
+                                </a>
+                                <hr>
+                                <a href="https://www.youtube.com/watch?v=Q9EWIE4Y_fY" target="_blank">
+                                    <p class="text-center">Opcion 3</p>
+                                </a>
+                                <hr>
+                                <a href="https://www.youtube.com/watch?v=LfR-2xf2t5o" target="_blank">
+                                    <p class="text-center">Opcion 4</p>
+                                </a>
+                                <hr>
+                            </p>
+                            <a href="" class="text-center">
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="cardcpu h-100">
+                        <img src="./imagenes/intelPentium-removebg-preview.png" class="card-img-top" alt="..."
+                            style="border-radius: 20px; height: 295px;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-center mt-5">Intel Pentium Gold G6400</h5>
+                            <p class="text-center">
+                                <hr>
+                            </p>
+                            <p class="card-text text-center">
+                                <a href="https://www.youtube.com/watch?v=2l7ndOvODz0" target="_blank"v>
+                                    <p class="text-center">Opcion 1</p>
+                                </a>
+                                <hr>
+                                <a href="https://www.youtube.com/watch?v=idfSSJPj_Hg" target="_blank">
+                                    <p class="text-center">Opcion 2</p>
+                                </a>
+                                <hr>
+                                <a href="https://www.youtube.com/watch?v=kBzomUYVIxc" target="_blank">
+                                    <p class="text-center">Opcion 3</p>
+                                </a>
+                                <hr>
+                                <a href="https://www.youtube.com/watch?v=A0Olr0bhiTY" target="_blank">
+                                    <p class="text-center">Opcion 4</p>
+                                </a>
+                                <hr>
+                            </p>
+                            <a href="" class="text-center">
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="cardcpu h-100">
+                        <img src="./imagenes/intel_celeron-removebg-preview.png" class="card-img-top" alt="..."
+                            style="border-radius: 20px;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center mt-5">Intel Celeron</h5>
+                            <p class="text-center">
+                                <hr>
+                            </p>
+                            <p class="card-text text-center tex">
+                                <a href="https://www.youtube.com/watch?v=Y8cGyDVOFro" target="_blank">
+                                    <p class="text-center">Opcion 1</p>
+                                </a>
+                                <hr>
+                                <a href="https://www.youtube.com/watch?v=-RJzzqtdQdY" target="_blank">
+                                    <p class="text-center">Opcion 2</p>
+                                </a>
+                                <hr>
+                                <a href="https://www.youtube.com/watch?v=-RJzzqtdQdY" target="_blank">
+                                    <p class="text-center">Opcion 3</p>
+                                </a>
+                                <hr>
+                                <a href="https://www.youtube.com/watch?v=-RJzzqtdQdY" target="_blank">
+                                    <p class="text-center">Opcion 4</p>
+                                </a>
+                                <hr>
+
+                            </p>
+                            <a href="" class="text-center">
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--fin de las 3 cartas-->
+        </div>
+    </div>
+
+
+    <div class="container mt-5">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="cardcpu h-100 ">
+                    <img src="./imagenes/RTX5090nofondo.png" class="card-img-top mt-5 " alt="..."
+                        style="border-radius: 20px; height: 245px; ">
+                    <div class="card-body">
+                        <h5 class="card-title text-center  mb-2">RTX 5090 Aorus</h5>
+                        <p class="card-text text-center">
+                            <hr>
+                        </p>
+                        <p class="text-center" style="text-align: justify;">
+                            <a href="https://www.youtube.com/watch?v=NPapJtE_ldk" target="_blank">
+                                <p class="text-center">Opcion 1</p>
+                            </a>
+                            <hr>
+                            <a href="https://www.youtube.com/watch?v=Oza9lgcjRSs" target="_blank">
+                                <p class="text-center">Opcion 2</p>
+                            </a>
+                            <hr>
+                            <a href="https://www.youtube.com/watch?v=luzzIBHEeMg" target="_blank">
+                                <p class="text-center">Opcion 3</p>
+                            </a>
+                            <hr>
+                            <a href="https://www.youtube.com/watch?v=3AKxbWgQDbY" target="_blank">
+                                <p class="text-center">Opcion 4</p>
+                            </a>
+                            <hr>
+
+                        </p>
+                        <a href="" class="text-center">
+
+                        </a>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="cardcpu h-100">
+                    <img src="./imagenes/RTX4090nofondo.png" class="card-img-top mt-5" alt="..."
+                        style="border-radius: 20px; height: 240px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-center">RTX 4090 ROG Z</h5>
+                        <p class="card-text text-center">
+                            <hr>
+                        </p>
+                        <p class="text-center" style="text-align: justify;">
+                            <a href="https://www.youtube.com/watch?v=ycV2QpjhOY0>
+                                <p class=" text-center" target="_blank">Opcion 1
+                        </p>
+                        </a>
+                        <hr>
+                        <a href="https://www.youtube.com/shorts/jglHpTdfeU4" target="_blank">
+                            <p class="text-center">Opcion 2</p>
+                        </a>
+                        <hr>
+                        <a href="https://www.youtube.com/watch?v=zqVdbxDRdUI" target="_blank">
+                            <p class="text-center">Opcion 3</p>
+                        </a>
+                        <hr>
+                        <a href="https://www.youtube.com/watch?v=zqVdbxDRdUI" target="_blank">
+                            <p class="text-center">Opcion 4</p>
+                        </a>
+                        <hr>
+
+
+
+                        </p>
+                        <a href="" class="text-center">
+
+                        </a>
+                        <p class="text-center "></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="cardcpu h-100">
+                    <img src="./imagenes/RTX3080Nofondo.png" class="card-img-top" alt="..."
+                        style="border-radius: 20px;  height: 280px;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center  mb-2">RTX 3080 EVGA</h5>
+                        <p class="card-text text-center tex">
+                            <hr>
+                        </p>
+                        <p class="text-center">
+                            <a href="https://www.youtube.com/watch?v=ycV2QpjhOY0" target="_blank">
+                                <p class="text-center">Opcion 1</p>
+                            </a>
+                            <hr>
+                            <a href="https://www.youtube.com/watch?v=Oza9lgcjRSs" target="_blank">
+                                <p class="text-center">Opcion 2</p>
+                            </a>
+                            <hr>
+                            <a href="https://www.youtube.com/watch?v=luzzIBHEeMg" target="_blank">
+                                <p class="text-center">Opcion 3</p>
+                            </a>
+                            <hr>
+                            <a href="https://www.youtube.com/watch?v=3AKxbWgQDbY" target="_blank">
+                                <p class="text-center">Opcion 4</p>
+                            </a>
+                            <hr>
+
+
+                        </p>
+                        <a href="" class="text-center">
+
+                        </a>
+                        <p class="text-center"></p>
+                    </div>
+                </div>
+            </div>
+            <!--fin de las 3 cartas-->
+        </div>
+    </div>
+    </div>
+
+    <!--Card graficas 2 -->
+    <div class="container mt-5">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="cardcpu h-100 ">
+                    <img src="./imagenes/RTX2080Nofondo.png" class="card-img-top " alt="..."
+                        style="border-radius: 20px; height: 240px; ">
+                    <div class="card-body">
+                        <h5 class="card-title text-center  mb-2">Nvidia RTX 2080</h5>
+                        <p class="card-text text-center">
+                            <a href="https://www.youtube.com/watch?v=jico3AfE2fg" target="_blank">
+                                <p class="text-center">Opcion 1</p>
+                            </a>
+                            <hr>
+                            <a href="https://www.youtube.com/watch?v=kZS7G1aiDQA" target="_blank">
+                                <p class="text-center">Opcion 2</p>
+                            </a>
+                            <hr>
+                            <a href="https://www.youtube.com/watch?v=dLvdzKzTvSc" target="_blank">
+                                <p class="text-center">Opcion 3</p>
+                            </a>
+                            <hr>
+                            <a href="https://www.youtube.com/watch?v=WiYH_PTTmkc" target="_blank">
+                                <p class="text-center">Opcion 4</p>
+                            </a>
+                            <hr>
+                        </p>
+                        <p class="text-center" style="text-align: justify;">
+
+                            <a href="" class="text-center">
+
+                            </a>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="cardcpu h-100">
+                    <img src="./imagenes/Gtx1080nofondo.png" class="card-img-top " alt="..."
+                        style="border-radius: 20px; height: 240px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-center  ">GTX 1080 ROG Z</h5>
+                        <p class="card-text text-center">
+                            <hr>
+                        </p>
+                        <p class="text-center" style="text-align: justify;">
+                            <a href="https://www.youtube.com/watch?v=EIp60HRLH08" target="_blank">
+                                <p class="text-center">Opcion 1</p>
+                            </a>
+                            <hr>
+                            <a href="https://www.youtube.com/shorts/zDFsm0OibVc" target="_blank">
+                                <p class="text-center">Opcion 2</p>
+                            </a>
+                            <hr>
+                            <a href="https://www.youtube.com/watch?v=fq_84l6Cvl0" target="_blank">
+                                <p class="text-center">Opcion 3</p>
+                            </a>
+                            <hr>
+                            <a href="https://www.youtube.com/watch?v=H4zm33FzXkQ" target="_blank">
+                                <p class="text-center">Opcion 4</p>
+                            </a>
+                            <hr>
+                        </p>
+                        <a href="" class="text-center">
+
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="cardcpu h-100">
+                    <img src="./imagenes/GTX960Nofondo.png" class="card-img-top" alt="..."
+                        style="border-radius: 20px; width: 300px; height: 240px;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center  mb-2">GTX 960 EVGA</h5>
+                        <p class="card-text text-center tex">
+                            <hr>
+                        </p>
+                        <p class="text-center">
+                            <a href="https://www.youtube.com/watch?v=1dEFW-C_2lE" target="_blank">
+                                <p class="text-center">Opcion 1</p>
+                            </a>
+                            <hr>
+                            <a href="https://www.youtube.com/watch?v=GR-YVovHwng" target="_blank">
+                                <p class="text-center">Opcion 2</p>
+                            </a>
+                            <hr>
+                            <a href="https://www.youtube.com/watch?v=lRA7PY5oBbo" target="_blank">
+                                <p class="text-center">Opcion 3</p>
+                            </a>
+                            <hr>
+                            <a href="https://www.youtube.com/watch?v=5QpAMcIlabo" target="_blank">
+                                <p class="text-center">Opcion 4</p>
+                            </a>
+                            <hr>
+
+                        </p>
+                        <a href="" class="text-center">
+
+                        </a>
+                        <p class="text-center"></p>
+                    </div>
+                </div>
+            </div>
+            <!--fin de las 3 cartas-->
+        </div>
+
+        <div class="container mt-5">
+
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="cardcpu h-100 ">
+                        <img src="./imagenes/RadeonRX7900Nofondo.png" class="card-img-top mt-5 " alt="..."
+                            style="border-radius: 20px; height: 245px; ">
+                        <div class="card-body">
+                            <h5 class="card-title text-center  mb-2">AMD Radeon RX7900</h5>
+                            <p class="card-text text-center">
+                                <hr>
+                            </p>
+                            <p class="text-center" style="text-align: justify;">
+                                <a href="https://www.youtube.com/watch?v=5zj-7aP6L8Q" target="_blank">
+                                    <p class="text-center">Opcion 1</p>
+                                </a>
+                                <hr>
+                                <a href="https://www.youtube.com/watch?v=TOaAhAQUztI" target="_blank">
+                                    <p class="text-center">Opcion 2</p>
+                                </a>
+                                <hr>
+                                <a href="https://www.youtube.com/watch?v=knIZ1_p9FTA" target="_blank">
+                                    <p class="text-center">Opcion 3</p>
+                                </a>
+                                <hr>
+                                <a href="https://www.youtube.com/watch?v=tJ2MiFp98Rw" target="_blank">
+                                    <p class="text-center">Opcion 4</p>
+                                </a>
+                                <hr>
+
+                            </p>
+                            <a href="" class="text-center">
+
+                            </a>
+                            <p class="text-center"></p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="cardcpu h-100">
+                        <img src="./imagenes/Radeon_6700xtNofondo.png" class="card-img-top mt-5" alt="..."
+                            style="border-radius: 20px; height: 240px;">
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-center">AMD Radeon 6700xt</h5>
+                            <p class="card-text text-center">
+                                <hr>
+                            </p>
+                            <p class="text-center" style="text-align: justify;">
+                                <a href="https://www.youtube.com/watch?v=nG2RdxbHPlU" target="_blank">
+                                    <p class="text-center">Opcion 1</p>
+                                </a>
+                                <hr>
+                                <a href="https://www.youtube.com/watch?v=FiFNStXVERE" target="_blank">
+                                    <p class="text-center">Opcion 2</p>
+                                </a>
+                                <hr>
+                                <a href="https://www.youtube.com/watch?v=b_iRwrTsmk0" target="_blank">
+                                    <p class="text-center">Opcion 3</p>
+                                </a>
+                                <hr>
+                                <a href="https://www.youtube.com/watch?v=5I-0U-nnW-E" target="_blank">
+                                    <p class="text-center">Opcion 4</p>
+                                </a>
+                                <hr>
+
+                            </p>
+                            <a href="" class="text-center">
+
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="cardcpu h-100">
+                        <img src="./imagenes/Radeon_RX_5700Nofondo.png" class="card-img-top" alt="..."
+                            style="border-radius: 20px;  height: 280px;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center  mb-2">AMD Radeon 5700</h5>
+                            <p class="card-text text-center tex">
+                                <hr>
+                            </p>
+                            <p class="text-center">
+                                <a href="https://www.youtube.com/watch?v=9jziBN9P7d4" target="_blank">
+                                    <p class="text-center">Opcion 1</p>
+                                </a>
+                                <hr>
+                                <a href="https://www.youtube.com/watch?v=8Re_1g1_VtA" target="_blank">
+                                    <p class="text-center">Opcion 2</p>
+                                </a>
+                                <hr>
+                                <a href="https://www.youtube.com/watch?v=A8q0AOgkBxE" target="_blank">
+                                    <p class="text-center">Opcion 3</p>
+                                </a>
+                                <hr>
+                                <a href="https://www.youtube.com/watch?v=KGKgL1lFd-M" target="_blank">
+                                    <p class="text-center">Opcion 4</p>
+                                </a>
+                                <hr>
+
+                            </p>
+                            <a href="" class="text-center">
+
+                            </a>
+                            <p class="text-center"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--fin de las 3 cartas-->
+        </div>
+    </div>
+    </div>
+
+    <!--Card graficas 2 -->
+    <div class="container mt-5">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="cardcpu h-100 ">
+                    <img src="./imagenes/RX_4700Nofondo.png" class="card-img-top " alt="..."
+                        style="border-radius: 20px; height: 240px; ">
+                    <div class="card-body">
+                        <h5 class="card-title text-center  mb-2">AMD Radeon RX4700</h5>
+                        <p class="card-text text-center">
+                        </p>
+                        <p class="text-center" style="text-align: justify;">
+                            <a href="https://www.youtube.com/watch?v=zbm7XvcRevw" target="_blank">
+                                <p class="text-center">Opcion 1</p>
+                            </a>
+                            <hr>
+                            <a href="https://www.youtube.com/watch?v=xDfMipR1sFc" target="_blank">
+                                <p class="text-center">Opcion 2</p>
+                            </a>
+                            <hr>
+                            <a href="https://www.youtube.com/watch?v=K0xMKq7qcdw" target="_blank">
+                                <p class="text-center">Opcion 3</p>
+                            </a>
+                            <hr>
+                            <a href="https://www.youtube.com/watch?v=iiU-3HzGA6k" target="_blank">
+                                <p class="text-center">Opcion 4</p>
+                            </a>
+                            <hr>
+
+                        </p>
+                        <a href="" class="text-center">
+
+                        </a>
+                        <p class="text-center"></p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="cardcpu h-100">
+                    <img src="./imagenes/RX580MsiFondo.png" class="card-img-top " alt="..."
+                        style="border-radius: 20px; height: 240px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-center  ">AMD RAadeon 580</h5>
+                        <p class="card-text text-center">
+                            <hr>
+                        </p>
+                        <p class="text-center" style="text-align: justify;">
+                            <a href="https://www.youtube.com/watch?v=JXs2Rx92Vyw" target="_blank">
+                                <p class="text-center">Opcion 1</p>
+                            </a>
+                            <hr>
+                            <a href="https://www.youtube.com/watch?v=727vYq3xsvE" target="_blank">
+                                <p class="text-center">Opcion 2</p>
+                            </a>
+                            <hr>
+                            <a href="https://www.youtube.com/watch?v=_MHoGYsMNxg" target="_blank">
+                                <p class="text-center">Opcion 3</p>
+                            </a>
+                            <hr>
+                            <a href="https://www.youtube.com/watch?v=HP4EWFgpBRU" target="_blank">
+                                <p class="text-center">Opcion 4</p>
+                            </a>
+                            <hr>
+
+                        </p>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="cardcpu h-100">
+                    <img src="./imagenes/RX_480Nofondo.png" class="card-img-top" alt="..."
+                        style="border-radius: 20px; width: 300px; height: 240px;">
+                    <div class="card-body">
+                        <h5 class="card-title text-center  mb-2">GTX 960 EVGA</h5>
+                        <p class="card-text text-center tex">
+                            <hr>
+                        </p>
+                        <p class="text-center">
+                            <a href="https://www.youtube.com/watch?v=TvScjLtnw9U" target="_blank">
+                                <p class="text-center">Opcion 1</p>
+                            </a>
+                            <hr>
+                            <a href="https://www.youtube.com/watch?v=Xf1gn4gZ3JA" target="_blank">
+                                <p class="text-center">Opcion 2</p>
+                            </a>
+                            <hr> 
+                            <a href="https://www.youtube.com/watch?v=nD4X7Fv7csI" target="_blank">
+                                <p class="text-center">Opcion 3</p>
+                            </a>
+                            <hr>
+                            <a href="https://www.youtube.com/watch?v=SwMBs7y00DU" target="_blank">
+                                <p class="text-center">Opcion 4</p>
+                            </a>
+                            <hr>
+
+
+                            <a href="" class="text-center">
+
+                            </a>
+
+                    </div>
+                </div>
+            </div>
+            <!--fin de las 3 cartas-->
+        </div>
+    </div>
+    </div>
+
+
+
+    <footer class="footer mt-5">
+        <div class="footer-section">
+            <h3>Ayuda</h3>
+            <ul>
+                <li><a href="#">Preguntas frecuentes</a></li>
+                <li><a href="#">Guía de usuario</a></li>
+                <li><a href="#">Soporte técnico</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section text'">
+            <h3>Contactos</h3>
+            <p>Email: bluejuanr95@gmail.com</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="40" fill="currentColor"
+                        class="bi bi-facebook" viewBox="0 0 16 16">
+                        <path
+                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                    </svg></a>
+                <a href="#"><i class="fab fa-instagram"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="40"
+                            fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                        </svg></i></a>
+                <a href="#"><i class="fab fa-linkedin""></i>
+        <svg xmlns=" http://www.w3.org/2000/svg" width="50" height="60" fill="currentColor" class="bi bi-linkedin"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                        </svg></a>
+            </div>
+        </div>
+
+        <div class=" footer-section">
+            <h3>Sugerencias</h3>
+            <p>¿Tienes alguna idea para mejorar nuestra web? ¡Nos encantaría
+                saberla!</p>
+            <a href="#">Enviar sugerencia</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="GraficasAMD.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./Graficas.js"></script>
+    <script src="ScriptCalculadora.js"></script>
+    <script src="./scriptNavBar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
